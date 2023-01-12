@@ -1,0 +1,10 @@
+{
+    "gitConfigUser.profiles": [
+        {
+            "label": "testInMorePlatform",
+            "email": "sanbo.xyz@gmail.com",
+            "userName": "sanbo",
+            "selected": true
+        }
+    ]
+}
