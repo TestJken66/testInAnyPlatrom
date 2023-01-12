@@ -24,10 +24,9 @@ jobs:
           ]
           # os.arch:amd64,x86_64
           # os.name: Linux, Mac OS X,Windows Server 2022,Windows Server 2019
-          # RUNNER_ARCH	执行作业的运行器的体系结构。 可能的值为 X86、X64、ARM 或 ARM64。
         arch: [x86, x64, arm, arm64]
     runs-on: ${{ matrix.platform }}
-    RUNNER_ARCH: ${{ matrix.arch }}
+    # RUNNER_ARCH: ${{ matrix.arch }}
     steps:
       - uses: actions/checkout@v2
       - name: set up JDK 11
