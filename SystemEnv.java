@@ -17,4 +17,7 @@ public class SystemEnv {
             System.out.println(entry.getKey() + "-------------------" + entry.getValue());
         }
     }
+
+    // System.out.println("\33[34;1m" + "xxxxx" + "\033[0m");
+
 }
