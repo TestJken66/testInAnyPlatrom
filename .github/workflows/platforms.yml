@@ -28,6 +28,13 @@ jobs:
           # os.arch:amd64,x86_64
           # os.name: Linux, Mac OS X,Windows Server 2022,Windows Server 2019
         # arch: [x86, x64, arm, arm64]
+        include:
+          - platform: "x86_64"
+          - platform: "x86"
+          - platform: "arm"
+          - platform: "amd64"
+        fail-fast: false
+
     runs-on: ${{ matrix.platform }}
     # RUNNER_ARCH: ${{ matrix.arch }}
     # runs-arch: x86
@@ -40,7 +47,7 @@ jobs:
           distribution: "adopt"
           #cache: gradle
 
-      - name: build and run
+      - name: get all system envs
         shell: bash
         continue-on-error: true
         run: |
@@ -48,3 +55,12 @@ jobs:
           echo "编译完成。。。。查看文件列表。。。。"
           ls -la
           java SystemEnv
+
+      - name: get system info
+        shell: bash
+        continue-on-error: true
+        run: |
+          javac SystemInfo.java
+          echo "编译完成。。。。查看文件列表。。。。"
+          ls -la
+          java SystemInfo
