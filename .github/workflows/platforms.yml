@@ -51,7 +51,7 @@ jobs:
         run: |
           javac SystemEnv.java
           echo "编译完成。。。。查看文件列表。。。。"
-          ls -la
+          ls
           java SystemEnv
 
       - name: get system info
@@ -60,5 +60,5 @@ jobs:
         run: |
           javac SystemInfo.java
           echo "编译完成。。。。查看文件列表。。。。"
-          ls -la
+          ls
           java SystemInfo
