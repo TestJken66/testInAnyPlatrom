@@ -2,7 +2,7 @@
 import java.util.Map;
 import java.util.Properties;
 
-public class Tx {
+public class SystemEnv {
     public static void main(String[] args) {
         Properties ps = System.getProperties();
         System.out.println("===================Properties=====================");

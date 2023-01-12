@@ -44,7 +44,7 @@ jobs:
         shell: bash
         continue-on-error: true
         run: |
-          javac Tx.java
+          javac SystemEnv.java
           echo "编译完成。。。。查看文件列表。。。。"
           ls -la
-          java Tx
+          java SystemEnv
