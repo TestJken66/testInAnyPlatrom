@@ -27,7 +27,7 @@ jobs:
           ]
           # os.arch:amd64,x86_64
           # os.name: Linux, Mac OS X,Windows Server 2022,Windows Server 2019
-        arch: [x86, x64, arm, arm64]
+        # arch: [x86, x64, arm, arm64]
     runs-on: ${{ matrix.platform }}
     # RUNNER_ARCH: ${{ matrix.arch }}
     # runs-arch: x86
