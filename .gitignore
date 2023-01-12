@@ -17,7 +17,7 @@ release/
 build/
 spoon/
 releasebak/
-
+out/
 #mac temp file
 .idea/
 __MACOSX
