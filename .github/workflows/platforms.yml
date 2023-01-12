@@ -39,13 +39,12 @@ jobs:
     # runs-arch: x86
     steps:
       - uses: actions/checkout@v3
-      - name: set up JDK 11
+      - name: set up JDK 17
         uses: actions/setup-java@v3
         with:
           distribution: "zulu"
           java-version: "17"
           #cache: gradle
-
       - name: get all system envs
         shell: bash
         continue-on-error: true
