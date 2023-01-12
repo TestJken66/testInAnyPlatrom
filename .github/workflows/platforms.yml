@@ -33,7 +33,6 @@ jobs:
           - platform: "x86"
           - platform: "arm"
           - platform: "amd64"
-        fail-fast: false
 
     runs-on: ${{ matrix.platform }}
     # RUNNER_ARCH: ${{ matrix.arch }}
