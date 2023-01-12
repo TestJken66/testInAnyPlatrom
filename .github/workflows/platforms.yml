@@ -52,7 +52,7 @@ jobs:
           javac SystemEnv.java
           echo "编译完成。。。。查看文件列表。。。。"
           ls
-          java SystemEnv
+          java -Dfile.encoding=UTF-8 SystemEnv
 
       - name: get system info
         shell: bash
@@ -61,4 +61,4 @@ jobs:
           javac SystemInfo.java
           echo "编译完成。。。。查看文件列表。。。。"
           ls
-          java SystemInfo
+          java -Dfile.encoding=UTF-8 SystemInfo
