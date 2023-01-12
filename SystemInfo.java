@@ -35,14 +35,12 @@ public class SystemInfo {
         System.out.println("46;37 \033[46;37;4m" + "Hello,Akina!" + "\033[0m");
         System.out.println("47 \033[47;4m" + "Hello,Akina!" + "\033[0m");
 
-        // ||| \033[字体颜色;字体背景色;样式m你的字符（输出的字符）\033[0m |||
+        // ||| \033[textColor;textBackground;Stylem xxxxxx xxxxxxxxxxxx ）\033[0m |||
         for (int i = 10; i < 100; i++) {
-            // System.out.println("字体颜色变动" + i + "----> \033[" + i + ";4m" + "彩色字符测试!" +
-            // "\033[0m");
             for (int j = 10; j < 100; j++) {
                 for (int k = 0; k < 100; k++) {
                     System.out.println("[" + i + ";" + j + ";" + k + "m]----> \033[" + i + ";" + j + ";" + k + "m"
-                            + "彩色字符测试!" + "\033[0m");
+                            + "BBBBBBBBBBBBBBBBBBBBBBBBBBBB!" + "\033[0m");
                 }
 
             }
